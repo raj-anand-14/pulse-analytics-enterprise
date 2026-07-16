@@ -33,7 +33,8 @@ Pulse.Config = (() => {
       CODENAME: 'Phoenix',
       VERSION: '1.0.0',
       AUTHOR: 'Anand Raj',
-      TIMEZONE: 'Asia/Kolkata'
+      TIMEZONE: 'Asia/Kolkata',
+      DEBUG_MODE: true
     }),
 
     UI: Object.freeze({
