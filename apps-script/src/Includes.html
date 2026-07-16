@@ -1,43 +1,28 @@
-<?!= HtmlService.createHtmlOutputFromFile('Header').getContent(); ?>
-<style>
+<!--
+==============================================================================
+File        : Includes.html
+Description : Global CSS and JavaScript Includes
+Author      : Anand Raj
+Version     : 0.2.0
+==============================================================================
+-->
 
-body{
+<!-- ===========================
+     Styles
+=========================== -->
 
-    margin:0;
-    padding:0;
+<?!= include('Theme'); ?>
+<?!= include('Layout'); ?>
+<?!= include('Components'); ?>
+<?!= include('Animations'); ?>
 
-    background:#0f172a;
+<!-- ===========================
+     Scripts
+=========================== -->
 
-    color:white;
-
-    font-family:Arial,sans-serif;
-
-}
-
-.container{
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    height:100vh;
-
-}
-
-h1{
-
-    font-size:48px;
-
-}
-
-h2{
-
-    color:#38bdf8;
-
-}
-
-</style>
+<?!= include('App'); ?>
+<?!= include('Router'); ?>
+<?!= include('Store'); ?>
+<?!= include('Api'); ?>
+<?!= include('Events'); ?>
+<?!= include('Utils'); ?>

@@ -3,9 +3,16 @@
 
 <head>
 
-  <base target="_top">
+    <base target="_top">
 
-  <?!= HtmlService.createHtmlOutputFromFile('Includes').getContent(); ?>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pulse Analytics Enterprise</title>
+
+    <?!= include('Includes'); ?>
 
 </head>
 
@@ -13,25 +20,25 @@
 
 <div class="app">
 
-    <?!= HtmlService.createHtmlOutputFromFile('Header').getContent(); ?>
+    <!-- Sidebar -->
 
-    <aside class="app-sidebar">
+    <?!= include('Sidebar'); ?>
 
-        Sidebar
+    <!-- Header -->
 
-    </aside>
+    <?!= include('Header'); ?>
+
+    <!-- Main -->
 
     <main class="app-main">
 
-        Dashboard
+        <?!= include('Dashboard'); ?>
 
     </main>
 
-    <footer class="app-footer">
+    <!-- Footer -->
 
-        Footer
-
-    </footer>
+    <?!= include('Footer'); ?>
 
 </div>
 
