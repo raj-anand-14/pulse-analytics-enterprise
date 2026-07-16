@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "pkief.material-icon-theme",
+    "github.vscode-github-actions",
+    "christian-kohler.path-intellisense"
+  ]
+}

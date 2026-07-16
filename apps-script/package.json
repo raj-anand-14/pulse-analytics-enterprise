@@ -1,0 +1,22 @@
+{
+  "name": "pulse-analytics-enterprise",
+  "version": "1.0.0",
+  "description": "Enterprise Team Performance Dashboard",
+  "private": true,
+  "scripts": {
+    "push": "clasp push",
+    "pull": "clasp pull",
+    "deploy": "clasp deploy",
+    "open": "clasp open-script"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.5.0",
+    "eslint": "^9.39.5",
+    "prettier": "^3.9.5"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
