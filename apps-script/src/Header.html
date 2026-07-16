@@ -1,6 +1,6 @@
 <!--
 ==============================================================================
-Component   : Header
+File        : Header.html
 Description : Enterprise Application Header
 Author      : Anand Raj
 Version     : 0.2.0
@@ -12,11 +12,14 @@ Version     : 0.2.0
     <div class="header-left">
 
         <button
-            id="menu-toggle"
-            class="btn btn-secondary"
-            aria-label="Toggle navigation">
+            id="sidebar-toggle"
+            class="btn btn-outline"
+            type="button"
+            aria-label="Toggle Sidebar">
 
-            ☰
+            <span class="material-symbols-rounded">
+                menu
+            </span>
 
         </button>
 
@@ -24,19 +27,25 @@ Version     : 0.2.0
 
             <div class="brand-logo">
 
-                📊
+                <span class="material-symbols-rounded">
+                    monitoring
+                </span>
 
             </div>
 
-            <div>
+            <div class="brand-info">
 
                 <h3 class="brand-title">
+
                     Pulse Analytics Enterprise
+
                 </h3>
 
-                <small class="brand-version">
+                <span class="brand-version">
+
                     Phoenix v0.2.0
-                </small>
+
+                </span>
 
             </div>
 
@@ -46,27 +55,42 @@ Version     : 0.2.0
 
     <div class="header-right">
 
-        <div class="search-placeholder">
+        <div class="header-search">
 
-            🔍 Search...
+            <span class="material-symbols-rounded">
+
+                search
+
+            </span>
+
+            <input
+                type="text"
+                placeholder="Search..."
+                class="search-input">
 
         </div>
 
-        <button class="btn btn-secondary">
+        <button
+            class="btn btn-outline"
+            aria-label="Notifications">
 
-            🔔
+            <span class="material-symbols-rounded">
+
+                notifications
+
+            </span>
 
         </button>
 
         <div class="profile">
 
-            <div class="avatar">
+            <div class="profile-avatar">
 
                 AR
 
             </div>
 
-            <div>
+            <div class="profile-info">
 
                 <div class="profile-name">
 
@@ -74,11 +98,11 @@ Version     : 0.2.0
 
                 </div>
 
-                <small>
+                <div class="profile-role">
 
                     Administrator
 
-                </small>
+                </div>
 
             </div>
 
