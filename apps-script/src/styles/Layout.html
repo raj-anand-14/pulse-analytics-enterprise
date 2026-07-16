@@ -1,0 +1,246 @@
+<!--
+==============================================================================
+Module      : Layout
+Description : Enterprise Application Layout System
+Author      : Anand Raj
+Version     : 0.2.0
+==============================================================================
+-->
+
+<style>
+
+/*=============================================================================
+  APPLICATION LAYOUT
+=============================================================================*/
+
+.app{
+
+    display:grid;
+
+    grid-template-columns:var(--sidebar-width) 1fr;
+
+    grid-template-rows:
+        var(--header-height)
+        1fr
+        var(--footer-height);
+
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar footer";
+
+    width:100vw;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+/*=============================================================================
+  HEADER
+=============================================================================*/
+
+.app-header{
+
+    grid-area:header;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 var(--space-6);
+
+    border-bottom:1px solid var(--color-border);
+
+    background:var(--color-surface);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+/*=============================================================================
+  SIDEBAR
+=============================================================================*/
+
+.app-sidebar{
+
+    grid-area:sidebar;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--color-surface);
+
+    border-right:1px solid var(--color-border);
+
+    overflow-y:auto;
+
+}
+
+/*=============================================================================
+  MAIN CONTENT
+=============================================================================*/
+
+.app-main{
+
+    grid-area:main;
+
+    overflow-y:auto;
+
+    padding:var(--space-6);
+
+    background:var(--color-background);
+
+}
+
+/*=============================================================================
+  FOOTER
+=============================================================================*/
+
+.app-footer{
+
+    grid-area:footer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 var(--space-6);
+
+    border-top:1px solid var(--color-border);
+
+    background:var(--color-surface);
+
+    font-size:var(--font-size-sm);
+
+}
+
+/*=============================================================================
+  PAGE CONTAINER
+=============================================================================*/
+
+.page{
+
+    width:100%;
+
+    max-width:1600px;
+
+    margin:0 auto;
+
+}
+
+/*=============================================================================
+  GRID UTILITIES
+=============================================================================*/
+
+.grid{
+
+    display:grid;
+
+    gap:var(--space-6);
+
+}
+
+.grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/*=============================================================================
+  FLEX UTILITIES
+=============================================================================*/
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-column{
+
+    flex-direction:column;
+
+}
+
+.justify-between{
+
+    justify-content:space-between;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.gap{
+
+    gap:var(--space-4);
+
+}
+
+/*=============================================================================
+  RESPONSIVE
+=============================================================================*/
+
+@media (max-width:1024px){
+
+.app{
+
+    grid-template-columns:80px 1fr;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.app{
+
+    grid-template-columns:1fr;
+
+    grid-template-rows:
+        var(--header-height)
+        1fr
+        var(--footer-height);
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+}
+
+.app-sidebar{
+
+    display:none;
+
+}
+
+}
+
+</style>
