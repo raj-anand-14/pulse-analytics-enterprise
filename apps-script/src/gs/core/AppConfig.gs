@@ -29,13 +29,13 @@ Pulse.Config = (() => {
   const CONFIG = Object.freeze({
 
     APP: Object.freeze({
-      NAME: 'Pulse Analytics Enterprise',
-      CODENAME: 'Phoenix',
-      VERSION: '1.0.0',
-      AUTHOR: 'Anand Raj',
-      TIMEZONE: 'Asia/Kolkata',
-      DEBUG_MODE: true
-    }),
+  NAME: 'Pulse Analytics Enterprise',
+  CODENAME: 'Phoenix',
+  VERSION: '1.0.0',
+  AUTHOR: 'Anand Raj',
+  DEBUG_MODE: true,
+  TIMEZONE: 'Asia/Kolkata'
+}),
 
     UI: Object.freeze({
       THEME: 'dark',
@@ -72,6 +72,51 @@ Pulse.Config = (() => {
   function getAll() {
     return CONFIG;
   }
+
+  /**
+ * Returns application configuration.
+ *
+ * @returns {Object}
+ */
+function app() {
+  return CONFIG.APP;
+}
+
+/**
+ * Returns UI configuration.
+ *
+ * @returns {Object}
+ */
+function ui() {
+  return CONFIG.UI;
+}
+
+/**
+ * Returns cache configuration.
+ *
+ * @returns {Object}
+ */
+function cache() {
+  return CONFIG.CACHE;
+}
+
+/**
+ * Returns ranking configuration.
+ *
+ * @returns {Object}
+ */
+function ranking() {
+  return CONFIG.RANKING;
+}
+
+/**
+ * Returns feature flags.
+ *
+ * @returns {Object}
+ */
+function features() {
+  return CONFIG.FEATURES;
+}
 
   /**
    * Returns configuration section.
@@ -114,11 +159,15 @@ Pulse.Config = (() => {
   }
 
   return Object.freeze({
-    get,
-    getAll,
-    name,
-    theme,
-    version
-  });
+  app,
+  ui,
+  cache,
+  ranking,
+  features,
+  getAll,
+  name,
+  theme,
+  version
+});
 
 })();
