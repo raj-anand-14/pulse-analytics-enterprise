@@ -27,9 +27,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Rounded"
           rel="stylesheet">
 
-    <!-- Global Includes -->
+    <!-- Styles -->
 
-    <?!= include('Includes'); ?>
+    <?!= include('Theme'); ?>
+    <?!= include('Layout'); ?>
+    <?!= include('Components'); ?>
 
 </head>
 
@@ -38,21 +40,9 @@
     <div id="app"
          class="app">
 
-        <!-- ==========================================
-             Sidebar
-        =========================================== -->
-
         <?!= include('Sidebar'); ?>
 
-        <!-- ==========================================
-             Header
-        =========================================== -->
-
         <?!= include('Header'); ?>
-
-        <!-- ==========================================
-             Main Content
-        =========================================== -->
 
         <main class="app-main">
 
@@ -63,10 +53,6 @@
             </div>
 
         </main>
-
-        <!-- ==========================================
-             Footer
-        =========================================== -->
 
         <?!= include('Footer'); ?>
 

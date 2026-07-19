@@ -1,127 +1,175 @@
 <!--
 ==============================================================================
 File        : Sidebar.html
-Description : Enterprise Application Sidebar
+Description : Enterprise Navigation Sidebar
 Author      : Anand Raj
 Version     : 0.2.0
 ==============================================================================
 -->
 
-<aside class="app-sidebar">
+<aside class="app-sidebar" id="app-sidebar">
 
-    <nav class="sidebar-nav">
+    <!-- Logo Area -->
+    <div class="sidebar-header">
 
-        <ul class="sidebar-menu">
+        <div class="sidebar-logo">
 
-            <li class="sidebar-item active"
-                data-page="dashboard">
-
-                <a href="#"
-                   class="sidebar-link">
-
-                    <span class="material-symbols-rounded">
-                        dashboard
-                    </span>
-
-                    <span class="sidebar-text">
-                        Dashboard
-                    </span>
-
-                </a>
-
-            </li>
-
-            <li class="sidebar-item"
-                data-page="employees">
-
-                <a href="#"
-                   class="sidebar-link">
-
-                    <span class="material-symbols-rounded">
-                        groups
-                    </span>
-
-                    <span class="sidebar-text">
-                        Employees
-                    </span>
-
-                </a>
-
-            </li>
-
-            <li class="sidebar-item"
-                data-page="clusters">
-
-                <a href="#"
-                   class="sidebar-link">
-
-                    <span class="material-symbols-rounded">
-                        account_tree
-                    </span>
-
-                    <span class="sidebar-text">
-                        Clusters
-                    </span>
-
-                </a>
-
-            </li>
-
-            <li class="sidebar-item"
-                data-page="reports">
-
-                <a href="#"
-                   class="sidebar-link">
-
-                    <span class="material-symbols-rounded">
-                        assessment
-                    </span>
-
-                    <span class="sidebar-text">
-                        Reports
-                    </span>
-
-                </a>
-
-            </li>
-
-            <li class="sidebar-item"
-                data-page="settings">
-
-                <a href="#"
-                   class="sidebar-link">
-
-                    <span class="material-symbols-rounded">
-                        settings
-                    </span>
-
-                    <span class="sidebar-text">
-                        Settings
-                    </span>
-
-                </a>
-
-            </li>
-
-        </ul>
-
-    </nav>
-
-    <div class="sidebar-footer">
-
-        <div class="sidebar-status">
-
-            <span class="status-dot"></span>
-
-            Connected
+            <span class="material-symbols-rounded">
+                dashboard
+            </span>
 
         </div>
 
-        <small>
+        <div class="sidebar-title">
 
-            Phoenix v0.2.0
+            Navigation
 
-        </small>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sidebar-nav">
+
+        <!-- Dashboard -->
+        <a href="#dashboard"
+           class="nav-item active"
+           data-page="dashboard">
+
+            <span class="material-symbols-rounded">
+                dashboard
+            </span>
+
+            <span class="nav-text">
+
+                Dashboard
+
+            </span>
+
+        </a>
+
+        <!-- Analytics -->
+        <a href="#analytics"
+           class="nav-item"
+           data-page="analytics">
+
+            <span class="material-symbols-rounded">
+                monitoring
+            </span>
+
+            <span class="nav-text">
+
+                Analytics
+
+            </span>
+
+        </a>
+
+        <!-- Reports -->
+        <a href="#reports"
+           class="nav-item"
+           data-page="reports">
+
+            <span class="material-symbols-rounded">
+                assessment
+            </span>
+
+            <span class="nav-text">
+
+                Reports
+
+            </span>
+
+        </a>
+
+        <!-- Employees -->
+        <a href="#employees"
+           class="nav-item"
+           data-page="employees">
+
+            <span class="material-symbols-rounded">
+                groups
+            </span>
+
+            <span class="nav-text">
+
+                Employees
+
+            </span>
+
+        </a>
+
+        <!-- Events -->
+        <a href="#events"
+           class="nav-item"
+           data-page="events">
+
+            <span class="material-symbols-rounded">
+                event
+            </span>
+
+            <span class="nav-text">
+
+                Events
+
+            </span>
+
+        </a>
+
+        <!-- Quality -->
+        <a href="#quality"
+           class="nav-item"
+           data-page="quality">
+
+            <span class="material-symbols-rounded">
+                verified
+            </span>
+
+            <span class="nav-text">
+
+                Quality
+
+            </span>
+
+        </a>
+
+        <!-- Workflow -->
+        <a href="#workflow"
+           class="nav-item"
+           data-page="workflow">
+
+            <span class="material-symbols-rounded">
+                account_tree
+            </span>
+
+            <span class="nav-text">
+
+                Workflow
+
+            </span>
+
+        </a>
+
+    </nav>
+
+    <!-- Footer -->
+    <div class="sidebar-footer">
+
+        <button
+            class="btn btn-outline sidebar-settings"
+            type="button">
+
+            <span class="material-symbols-rounded">
+                settings
+            </span>
+
+            <span>
+
+                Settings
+
+            </span>
+
+        </button>
 
     </div>
 
